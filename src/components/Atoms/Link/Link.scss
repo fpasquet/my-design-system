@@ -1,0 +1,11 @@
+@use 'sass:map';
+@use '@/styles/abstracts' as *;
+
+.link {
+  color: map.get($tokens, 'color', 'secondary');
+
+  &:hover {
+    font-weight: map.get($tokens, 'font-weight', 'medium');
+    text-decoration-line: underline;
+  }
+}

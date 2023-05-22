@@ -1,0 +1,20 @@
+@use 'sass:map';
+@use '@/styles/abstracts' as *;
+
+$text-config: (
+  'base': (
+    'font-family': map.get($tokens, 'font-family', 'body'),
+    'line-height': map.get($tokens, 'line-heigt', 'body'),
+  ),
+  'xs': (
+    'font-size': map.get($tokens, 'font-size', 'text-xs'),
+  ),
+  's': (
+    'font-size': map.get($tokens, 'font-size', 'text-s'),
+  ),
+  'm': (
+    'font-size': map.get($tokens, 'font-size', 'text-m'),
+  ),
+);
+
+@include component('text', $text-config);

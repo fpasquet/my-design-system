@@ -1,0 +1,9 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+/*
+ * Spacing System Class Names with
+ */
+@each $prefix-class-name, $property-css in map.merge($margin-prop-list, $padding-prop-list) {
+  @include utility-classes-with-breakpoints($property-css, map.get($tokens, 'spacing'), $prefix-class-name);
+}

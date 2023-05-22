@@ -486,6 +486,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@klass/core@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@klass/core/-/core-1.0.3.tgz#15e6705ed98b6faa1fcccc6bb36bc319de9dfef3"
+  integrity sha512-xURitwaq1wDGtVPy+tuJRLzjEp4JRU7/ZA0fzSGNKsrsNw1IE+Ck81MLxDLOxNfVIfN2I06ZceBZBxm1v3Ssng==
+
 "@microsoft/api-extractor-model@7.27.0":
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/@microsoft/api-extractor-model/-/api-extractor-model-7.27.0.tgz#d648629a1fde6933663bdb613f0ee39c425aae7a"
@@ -1474,6 +1479,11 @@ ci-info@^3.2.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.8.0.tgz#81408265a5380c929f0bc665d62256628ce9ef91"
   integrity sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==
+
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
 clean-stack@^2.0.0:
   version "2.2.0"
@@ -4224,6 +4234,11 @@ react-is@^18.0.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+
+react-polymorphed@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-polymorphed/-/react-polymorphed-2.1.1.tgz#c1d936854993b5a2983781bcdfba2d823e5ca8fa"
+  integrity sha512-dkq/kuiZ9jWXFtUTIMqUOb1l+YZAMD3V4PBAL+kxuFAqCr/X3cDbjoDeVIgq1WxtkNd9tvztNcBVQ8Xe4ziYZQ==
 
 react-refresh@^0.14.0:
   version "0.14.0"

@@ -36,6 +36,6 @@ describe('TypeScript Map Deep format', () => {
     // Remove all new lines and tabs from the actual string
     const cleanedOutput = output.replace(/[\n\t]/g, '');
 
-    expect(cleanedOutput).toContain(`const tokens = {'color': {'primary': '#FF9900'},'spacing': {'xs': '4px'}};`);
+    expect(cleanedOutput).toContain(`export const tokens = {'color': {'primary': { value: '#FF9900' }},'spacing': {'xs': { value: '4px' }}};`);
   });
 });
