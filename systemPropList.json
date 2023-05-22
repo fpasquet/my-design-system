@@ -1,0 +1,156 @@
+{
+  "margin": {
+    "m": {
+      "cssProperties": [
+        "margin"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "mt": {
+      "cssProperties": [
+        "margin-top"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "mr": {
+      "cssProperties": [
+        "margin-right"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "ml": {
+      "cssProperties": [
+        "margin-left"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "mb": {
+      "cssProperties": [
+        "margin-bottom"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "mx": {
+      "cssProperties": [
+        "margin-left",
+        "margin-right"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "my": {
+      "cssProperties": [
+        "margin-top",
+        "margin-bottom"
+      ],
+      "tokenCategory": "spacing"
+    }
+  },
+  "padding": {
+    "p": {
+      "cssProperties": [
+        "padding"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "pt": {
+      "cssProperties": [
+        "padding-top"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "pr": {
+      "cssProperties": [
+        "padding-right"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "pl": {
+      "cssProperties": [
+        "padding-left"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "pb": {
+      "cssProperties": [
+        "padding-bottom"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "px": {
+      "cssProperties": [
+        "padding-left",
+        "padding-right"
+      ],
+      "tokenCategory": "spacing"
+    },
+    "py": {
+      "cssProperties": [
+        "padding-top",
+        "padding-bottom"
+      ],
+      "tokenCategory": "spacing"
+    }
+  },
+  "color": {
+    "bg": {
+      "cssProperties": [
+        "background-color"
+      ],
+      "tokenCategory": "color"
+    },
+    "color": {
+      "cssProperties": [
+        "color"
+      ],
+      "tokenCategory": "color"
+    }
+  },
+  "typography": {
+    "textAlign": {
+      "prefixClassName": "text",
+      "cssProperties": [
+        "text-align"
+      ],
+      "cssValues": {
+        "left": "left",
+        "center": "center",
+        "right": "right",
+        "justify": "justify"
+      }
+    },
+    "weight": {
+      "prefixClassName": "text",
+      "cssProperties": [
+        "font-weight"
+      ],
+      "tokenCategory": "font-weight"
+    },
+    "italic": {
+      "prefixClassName": "text",
+      "cssProperties": [
+        "font-style"
+      ]
+    },
+    "textDecoration": {
+      "prefixClassName": "text",
+      "cssProperties": [
+        "text-decoration"
+      ],
+      "cssValues": {
+        "underline": "underline",
+        "dotted": "dotted"
+      }
+    },
+    "textTransform": {
+      "prefixClassName": "text",
+      "cssProperties": [
+        "text-transform"
+      ],
+      "cssValues": {
+        "capitalize": "capitalize",
+        "uppercase": "uppercase",
+        "lowercase": "lowercase"
+      }
+    }
+  }
+}

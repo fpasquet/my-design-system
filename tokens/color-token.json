@@ -1,0 +1,38 @@
+{
+  "color": {
+    "primary": {
+      "value": "#3767B6",
+      "comment": "Typically your primary brand color."
+    },
+    "secondary": {
+      "value": "#DD3156",
+      "comment": "A secondary branding color for supplementary value."
+    },
+    "black": {
+      "value": "#000"
+    },
+    "white": {
+      "value": "#FFF"
+    },
+    "neutral": {
+      "value": "#F5F7F8",
+      "comment": "The base level colors, used for backgrounds."
+    },
+    "info": {
+      "value": "#3ABFF8",
+      "comment": "Used to provide additional information to the user without conveying any particular level of importance."
+    },
+    "success": {
+      "value": "#36D399",
+      "comment": "Used for successful or positive actions, such as a form submit alert."
+    },
+    "warning": {
+      "value": "#FBBD23",
+      "comment": "Used for negative or harmful actions, such as warnings."
+    },
+    "error": {
+      "value": "#F87272",
+      "comment": "May be used for errors, alerts, and invalid inputs."
+    }
+  }
+}
