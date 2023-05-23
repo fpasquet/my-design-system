@@ -1,0 +1,46 @@
+import { Meta } from '@storybook/addon-docs';
+import { Layout, Table } from '@storybook-components';
+import { Text } from '@/components';
+import { tokens } from '@/constants';
+
+<Meta
+    title="Foundations/Design Tokens/Typography/FontFamily"
+    parameters={{
+        viewMode: 'docs',
+        previewTabs: {
+            canvas: { hidden: true }
+        },
+        backgrounds: {
+            disable: true,
+            grid: {
+                disable: true,
+            }
+        },
+    }}
+/>
+
+<Layout
+    title="Typography"
+    description="Font Family token scales"
+>
+    <Table
+        columns={[
+            {
+                name: 'name',
+                label: 'Name',
+            },
+            {
+                name: 'preview',
+                label: 'Preview',
+            },
+        ]}
+        rows={Object.entries(tokens['font-family']).map(([tokenName, token]) => {
+            return {
+                name: (
+                    <Text weight="medium">{tokenName}</Text>
+                ),
+                preview: token.value,
+            }
+        })}
+    />
+</Layout>

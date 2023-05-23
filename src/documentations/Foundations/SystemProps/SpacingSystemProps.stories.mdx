@@ -1,0 +1,21 @@
+import * as React from 'react';
+import { Meta } from '@storybook/addon-docs';
+import { Layout, SystemPropsTable } from '@storybook-components';
+import { systemPropList } from '@/constants';
+
+<Meta title="Foundations/System Props/Spacing System Props" />
+
+<Layout
+        title="System Props"
+        description="All properties available on Spacing System Props"
+    >
+        <SystemPropsTable
+            title="Margin System Props"
+            systemProps={systemPropList.margin}
+        />
+        <SystemPropsTable
+            mt="m"
+            title="Padding System Props"
+            systemProps={systemPropList.padding}
+        />
+</Layout>

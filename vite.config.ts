@@ -12,6 +12,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
+      '@storybook-components': path.resolve(__dirname, '.storybook/components'),
     },
   },
   build: {
