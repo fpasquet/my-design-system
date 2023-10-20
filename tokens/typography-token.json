@@ -1,0 +1,56 @@
+{
+  "font-family": {
+    "heading": {
+      "value": "Work Sans"
+    },
+    "body": {
+      "value": "Work Sans"
+    }
+  },
+  "font-weight": {
+    "regular": {
+      "value": "400"
+    },
+    "medium": {
+      "value": "500"
+    },
+    "bold": {
+      "value": "700"
+    }
+  },
+  "font-size": {
+    "body": {
+      "value": "16"
+    },
+    "scale": {
+      "value": "2",
+      "type": "scale"
+    },
+    "text-xs": {
+      "value": "{font-size.text-s} - {font-size.scale}"
+    },
+    "text-s": {
+      "value": "{font-size.text-m} - {font-size.scale}"
+    },
+    "text-m": {
+      "value": "{font-size.body}"
+    },
+    "heading-s": {
+      "value": "{font-size.body} + {font-size.scale}"
+    },
+    "heading-m": {
+      "value": "{font-size.heading-s} + {font-size.scale}"
+    },
+    "heading-l": {
+      "value": "{font-size.heading-m} + {font-size.scale}"
+    }
+  },
+  "line-height": {
+    "body": {
+      "value": "1.2"
+    },
+    "heading": {
+      "value": "1.5"
+    }
+  }
+}

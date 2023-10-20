@@ -1,0 +1,9 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+/*
+ * Color System Class Names
+ */
+@each $prefix-class-name, $property-css in $color-prop-list {
+  @include utility-classes($property-css, map.get($tokens, 'color'), $prefix-class-name);
+}

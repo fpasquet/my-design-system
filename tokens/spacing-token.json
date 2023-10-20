@@ -1,0 +1,23 @@
+{
+  "spacing": {
+    "scale": {
+      "value": "2",
+      "type": "scale"
+    },
+    "xs": {
+      "value": "4"
+    },
+    "s": {
+      "value": "{spacing.xs} * {spacing.scale}"
+    },
+    "m": {
+      "value": "{spacing.s} * {spacing.scale}"
+    },
+    "l": {
+      "value": "{spacing.m} * {spacing.scale}"
+    },
+    "xl": {
+      "value": "{spacing.l} * {spacing.scale}"
+    }
+  }
+}

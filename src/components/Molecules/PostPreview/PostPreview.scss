@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use '@/styles/abstracts' as *;
+
+.post-preview {
+  &__meta {
+    span:not(:last-child)::after {
+      position: relative;
+      content: '•';
+      margin-left: map.get($tokens, 'spacing', 's');
+      margin-right: map.get($tokens, 'spacing', 's');
+    }
+  }
+}

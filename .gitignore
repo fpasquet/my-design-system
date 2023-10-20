@@ -23,3 +23,11 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Style Dictionnary
+src/styles/_variables.scss
+src/styles/abstracts/variables/_tokens.scss
+src/styles/abstracts/variables/_utilities.scss
+src/constants/tokens.ts
+src/constants/systemPropList.ts
+src/constants/cssValuesList.ts

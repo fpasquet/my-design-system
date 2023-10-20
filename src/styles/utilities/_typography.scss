@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+/*
+ * Typography System Class Names
+ */
+@include utility-classes('text-align', $text-align-list, $text-align-prefix-class-name);
+.#{$italic-prefix-class-name}-italic {
+  font-style: italic;
+}
+
+@include utility-classes('font-weight', $font-weight-list, $weight-prefix-class-name);
+@include utility-classes('text-transform', $text-transform-list, $text-align-prefix-class-name);
+@include utility-classes('text-decoration', $text-decoration-list, $text-decoration-prefix-class-name);
