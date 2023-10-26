@@ -1,6 +1,8 @@
-import { reklass as reklassBase, ReklassFn, VariantsSchema } from '@klass/core';
+import type { ReklassFn, VariantsSchema } from '@klass/core';
+import { reklass as reklassBase } from '@klass/core';
+
 import { breakpointTokenNameList } from '@/constants';
-import { BreakpointType } from '@/types';
+import type { BreakpointType } from '@/types';
 
 type BreakpointCondition = Record<BreakpointType, string>;
 

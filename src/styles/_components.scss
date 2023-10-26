@@ -1,0 +1,42 @@
+// Do not edit directly
+// Generated on Mon, 23 Oct 2023 12:22:13 GMT
+
+@use 'sass:map';
+
+@use './abstracts' as *;
+
+$text-config: (
+	'base': (
+		'font-family': map.get($tokens, 'font-family', 'body'),
+		'line-height': map.get($tokens, 'line-height', 'body')
+	),
+	's': (
+		'font-size': map.get($tokens, 'font-size', 'text-s')
+	),
+	'm': (
+		'font-size': map.get($tokens, 'font-size', 'text-m')
+	)
+);
+
+$heading-config: (
+	'base': (
+		'font-family': map.get($tokens, 'font-family', 'heading'),
+		'line-height': map.get($tokens, 'line-height', 'heading')
+	),
+	's': (
+		'font-size': map.get($tokens, 'font-size', 'heading-s'),
+		'font-weight': map.get($tokens, 'font-weight', 'medium')
+	),
+	'm': (
+		'font-size': map.get($tokens, 'font-size', 'heading-m'),
+		'font-weight': map.get($tokens, 'font-weight', 'bold')
+	),
+	'l': (
+		'font-size': map.get($tokens, 'font-size', 'heading-l'),
+		'font-weight': map.get($tokens, 'font-weight', 'bold')
+	)
+);
+
+
+@include component('text', $text-config);
+@include component('heading', $heading-config);

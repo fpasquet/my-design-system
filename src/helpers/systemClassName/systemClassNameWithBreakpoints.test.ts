@@ -1,4 +1,5 @@
-import { TypeWithBreakpointType } from '@/types';
+import type { TypeWithBreakpointType } from '@/types';
+
 import { systemClassNameWithBreakpoints } from './systemClassNameWithBreakpoints';
 
 describe('Test method systemClassNameWithBreakpoints', () => {

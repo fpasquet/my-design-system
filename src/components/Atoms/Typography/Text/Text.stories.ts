@@ -1,7 +1,9 @@
+import type { Meta, StoryObj } from '@storybook/react';
+
 import { boxArgTypes } from '@/constants/storybook';
 import { createArgTypes } from '@/helpers/storybook';
+
 import { Text, textSize } from './Text';
-import type { Meta, StoryObj } from '@storybook/react';
 
 const meta = {
   title: 'Components/Atoms/Typography/Text',

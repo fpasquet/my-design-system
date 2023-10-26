@@ -1,5 +1,5 @@
 import { tokens } from '@/constants/tokens';
-import { BreakpointType, ColorType, FontWeightType, SpacingType } from '@/types';
+import type { BreakpointType, ColorType, FontWeightType, SpacingType } from '@/types';
 
 export const breakpointTokenNameList = Object.keys(tokens['breakpoint']) as ReadonlyArray<BreakpointType>;
 export const spacingTokenNameList = Object.keys(tokens['spacing']) as ReadonlyArray<SpacingType>;

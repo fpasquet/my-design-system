@@ -1,6 +1,7 @@
 import { systemPropList, tokens } from '@/constants';
 import { capitalize } from '@/helpers/string';
-import { StorybookArgTypes } from '@/types';
+import type { StorybookArgTypes } from '@/types';
+
 import { createDescriptionMdn } from './mdn';
 
 export const createArgTypes = (options: {
@@ -21,22 +22,24 @@ export const createArgTypes = (options: {
   options: options?.values,
 });
 
-export const getArgTypesByCategory = (category: keyof typeof systemPropList) => {
-  return Object.entries(systemPropList[category]).reduce((argTypes, [propName, propOptions]) => {
-    let options;
-    if (propOptions.tokenCategory || propOptions.cssValues) {
-      options = propOptions?.tokenCategory
-        ? Object.keys(tokens[propOptions.tokenCategory as keyof typeof tokens])
-        : (Object.keys(propOptions.cssValues) as string[]);
-    }
-    argTypes[propName] = createArgTypes({
-      cssProperties: propOptions.cssProperties,
-      category: propOptions.tokenCategory ? capitalize(propOptions.tokenCategory) : capitalize(category),
-      subcategory:
-        propOptions.tokenCategory && propOptions.tokenCategory !== category ? capitalize(category) : undefined,
-      values: options,
-    });
+export const getArgTypesByCategory = (category: keyof typeof systemPropList) =>
+  Object.entries(systemPropList[category]).reduce(
+    (argumentTypes, [propName, propOptions]) => {
+      let options;
+      if (propOptions.tokenCategory || propOptions.cssValues) {
+        options = propOptions?.tokenCategory
+          ? Object.keys(tokens[propOptions.tokenCategory as keyof typeof tokens])
+          : (Object.keys(propOptions.cssValues) as string[]);
+      }
+      argumentTypes[propName] = createArgTypes({
+        cssProperties: propOptions.cssProperties,
+        category: propOptions.tokenCategory ? capitalize(propOptions.tokenCategory) : capitalize(category),
+        subcategory:
+          propOptions.tokenCategory && propOptions.tokenCategory !== category ? capitalize(category) : undefined,
+        values: options,
+      });
 
-    return argTypes;
-  }, {} as Record<string, StorybookArgTypes>);
-};
+      return argumentTypes;
+    },
+    {} as Record<string, StorybookArgTypes>
+  );

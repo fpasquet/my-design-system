@@ -1,6 +1,8 @@
-import { boxArgTypes } from '@/constants/storybook';
-import { PostPreview } from './PostPreview';
 import type { Meta, StoryObj } from '@storybook/react';
+
+import { boxArgTypes } from '@/constants/storybook';
+
+import { PostPreview } from './PostPreview';
 
 const meta = {
   title: 'Components/Molecules/PostPreview',

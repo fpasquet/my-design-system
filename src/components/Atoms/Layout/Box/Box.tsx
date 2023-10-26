@@ -3,13 +3,13 @@ import * as React from 'react';
 
 import { systemPropKeys } from '@/constants';
 import {
-  splitRestProps,
-  spacingSystemClassName,
   colorSystemClassName,
-  typographySystemClassName,
   polyRef,
+  spacingSystemClassName,
+  splitRestProps,
+  typographySystemClassName,
 } from '@/helpers';
-import { ColorSystemProps, SpacingSystemProps, TypographySystemProps } from '@/types';
+import type { ColorSystemProps, SpacingSystemProps, TypographySystemProps } from '@/types';
 
 export interface BoxProps extends SpacingSystemProps, ColorSystemProps, TypographySystemProps {
   className?: string;

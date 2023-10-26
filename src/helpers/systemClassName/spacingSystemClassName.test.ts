@@ -1,4 +1,5 @@
-import { MarginSystemProps, PaddingSystemProps, SpacingSystemProps } from '@/types';
+import type { MarginSystemProps, PaddingSystemProps, SpacingSystemProps } from '@/types';
+
 import { marginSystemClassName, paddingSystemClassName, spacingSystemClassName } from './spacingSystemClassName';
 
 describe('Test method spacingSystemProps', () => {

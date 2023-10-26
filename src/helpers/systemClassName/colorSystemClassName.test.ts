@@ -1,4 +1,5 @@
-import { ColorSystemProps } from '@/types';
+import type { ColorSystemProps } from '@/types';
+
 import { colorSystemClassName } from './colorSystemClassName';
 
 describe('Test method colorSystemClassName', () => {
