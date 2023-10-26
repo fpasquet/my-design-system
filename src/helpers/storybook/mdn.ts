@@ -6,7 +6,7 @@ export const getLinkMdnByCssProperty = (cssProperty: string): string =>
 export const createDescriptionMdn = (options: { cssProperties: readonly string[] }): string => {
   const description: string[] = [];
   const cssProps = options.cssProperties
-    .map(kebabCase)
+    .map((cssProperty) => kebabCase(cssProperty))
     .map((cssProperty) => ` [${cssProperty}](${getLinkMdnByCssProperty(cssProperty)})`)
     .join(', ');
 

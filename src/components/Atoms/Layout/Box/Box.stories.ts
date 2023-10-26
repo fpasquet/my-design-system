@@ -1,6 +1,8 @@
-import { boxArgTypes } from '@/constants/storybook';
-import { Box } from './Box';
 import type { Meta, StoryObj } from '@storybook/react';
+
+import { boxArgTypes } from '@/constants/storybook';
+
+import { Box } from './Box';
 
 const meta = {
   title: 'Components/Atoms/Layout/Box',

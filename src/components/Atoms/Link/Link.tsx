@@ -1,9 +1,11 @@
 import classNames from 'classnames';
 import * as React from 'react';
-import './Link.scss';
 
-import { Box, BoxProps } from '@/components';
+import type { BoxProps } from '@/components';
+import { Box } from '@/components';
 import { polyRef } from '@/helpers';
+
+import './Link.scss';
 
 export interface LinkProps extends BoxProps {
   children: React.ReactNode;

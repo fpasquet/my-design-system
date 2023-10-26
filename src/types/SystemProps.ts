@@ -1,4 +1,4 @@
-import { systemPropList, textAlignList, textDecorationList, textTransformList, tokens } from '@/constants';
+import type { systemPropList, textAlignList, textDecorationList, textTransformList, tokens } from '@/constants';
 
 export type BreakpointType = keyof (typeof tokens)['breakpoint'];
 

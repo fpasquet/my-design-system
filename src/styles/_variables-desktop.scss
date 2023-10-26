@@ -1,0 +1,20 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 23 Oct 2023 12:22:13 GMT
+ */
+
+@use './abstracts' as *;
+
+:root {
+	@include create-media-queries('md') {
+		--font-size-body: 16px;
+		--font-size-text-m: 20px;
+		--font-size-text-s: 16px;
+		--font-size-text-xs: 14px;
+		--font-size-text-xxs: 12px;
+		--font-size-heading-xl: 28px;
+		--font-size-heading-l: 26px;
+		--font-size-heading-m: 22px;
+		--font-size-heading-s: 18px;
+	}
+}

@@ -1,9 +1,11 @@
-import './PostPreview.scss';
-
 import * as React from 'react';
-import { Box, BoxProps, Heading, Link, LinkProps, Text } from '@/components';
+
+import type { BoxProps, LinkProps } from '@/components';
+import { Box, Heading, Link, Text } from '@/components';
 import { polyRef } from '@/helpers';
-import { PropsPolymorphicWithoutRef } from '@/types';
+import type { PropsPolymorphicWithoutRef } from '@/types';
+
+import './PostPreview.scss';
 
 export interface PostPreviewProps extends Omit<BoxProps, 'children'> {
   title: React.ReactNode;
@@ -27,7 +29,7 @@ export const PostPreview = polyRef<'div', PostPreviewProps>(
         {authors?.map((author, authorIndex) => (
           <Text key={author.username} as="span">
             {author.name}
-            {authorIndex !== authors.length - 1 ? ' & ' : ''}
+            {authorIndex === authors.length - 1 ? '' : ' & '}
           </Text>
         ))}
       </Text>
